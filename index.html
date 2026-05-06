@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Datos</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="js/librerias/jquery-ui.css" />
+
+    
+</head>
+<body>
+
+    <header>
+      <div class="grupo-izquierdo">
+        <img src="imagenes/logo1.png" alt="Banco de Mexico" class="logo" />
+      </div>
+      <div class="usuario">
+        <div class="botones-header desktop-only botones">          
+          <a href="#" data-tooltip="Cerrar sesión" data-tooltip-position="bottom">
+            <img src="imagenes/salir.svg" alt="Cerrar sesión" data-imgtype="d" width="24" height="24">
+          </a>
+        </div>
+        <div class="usuario-main">
+          <div class="info">
+            <div class="nombre-usuario">Luis Antonio Hernández De La Luz</div>
+            <div class="nombre-usuario">B16847 - 002001</div>
+          </div>
+          <img src="imagenes/b16847.png" alt="Usuario" class="foto-usuario">
+        </div>
+      </div>
+    </header>
+
+    <div class="contenedor-app">
+        <div class="gema-layout">
+            
+            <aside class="sidebar-shortcuts">
+    <div class="sidebar-header">
+        <h3>Fuentes de Información</h3>
+    </div>
+    
+    <div class="source-card">
+        <div class="source-status">
+            <div class="pulse-container">
+                <span class="dot"></span>
+                <span class="pulse"></span>
+            </div>
+            <span class="status-label">Fuente activa</span>
+        </div>
+
+        <div class="source-details">
+            <h4 class="db-name">Tablero de Calificaciones en el Envío de Información del Sistema Financiero al Banco de México</h4>
+            <div class="db-meta">
+                <div class="meta-row">
+                    <span class="meta-label">Periodo de informacion</span>
+                    <span class="meta-val">202301 - 202512</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <button id="btn-diccionario" class="btn-diccionario-modern">
+            <span>Ver diccionario de datos</span>
+            <i class="icon-book">📖</i>
+        </button>
+    </div>
+</aside>
+
+            <main class="chat-container">
+                <div id="chat-window" class="chat-window">
+                    
+                    <div class="message agent-message">
+                        <div class="agent-header">
+                            <div class="avatar-mini">O</div>
+                            <span>ORION</span>
+                        </div>
+                        <div class="text">
+                            Hola, <b>Luis Antonio</b>. Bienvenido al Explorador de Datos.                             
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <input type="text" id="user-input" placeholder="¿Qué deseas consultar?" autocomplete="off">
+                        <button id="send-btn" class="send-btn">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="loading-overlay" class="loader-overlay">
+        <div class="loader"></div>
+        <p style="margin-top: 15px; color: var(--azul-piif); font-weight: 600;">Consultando API Banxico...</p>
+    </div>
+
+    <script src="js/librerias/jquery-3.7.1.min.js"></script>
+    <script src="js/librerias/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    
+    <script src="js/librerias/highcharts.js"></script>
+    
+    <script src="script.js"></script>
+
+    <script>
+        // Función auxiliar para los botones de la sidebar
+        function setQuery(text) {
+            document.getElementById('user-input').value = text;
+            document.getElementById('user-input').focus();
+        }
+    </script>
+
+</body>
+</html>
