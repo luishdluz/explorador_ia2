@@ -7,8 +7,8 @@ $(document).ready(function() {
     $("#btn-diccionario").on("click", function() {
     const diccionarioHtml = `
         <div class="agent-header">
-            <div class="avatar-mini">G</div>
-            <span>GEMA - Diccionario SQL Server</span>
+            <div class="avatar-mini">O</div>
+            <span>ORION</span>
         </div>
         <div class="text">
             Estructura técnica de: <code>IndicadoresCalidad_Banxico</code>
