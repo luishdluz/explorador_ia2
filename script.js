@@ -71,7 +71,7 @@ $(document).ready(function() {
         })
         .catch(err => {
             $("#loading-overlay").hide();
-            appendMessage("Error conectando con el servicio de datos.", 'agent');
+            appendMessage("No me fue posible obtener respuesta de su solicitud.", 'agent');
             console.error("Error en Fetch:", err);
         });
     }
