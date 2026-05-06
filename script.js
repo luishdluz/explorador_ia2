@@ -28,11 +28,11 @@ $(document).ready(function() {
                         <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>nombre_agr_formulario</b></td><td>varchar(40)</td><td>Nombre del formulario</td></tr>
                         <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>periodo_evaluacion</b></td><td>int</td><td>Periodo de información (YYYYMM)</td></tr>
                         <tr style="background: #f8fafc;"><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_tfor</b></td><td>decimal</td><td>Promedio General</td></tr>
-                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind1</b></td><td>decimal</td><td>Indicador de extemporaneidad</td></tr>
-                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind2</b></td><td>decimal</td><td>Indicador de reenvíos</td></tr>
-                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind3</b></td><td>decimal</td><td>Indicador de retransmisiones</td></tr>
-                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind4</b></td><td>decimal</td><td>Indicador de motivos de retransmisión</td></tr>
-                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind5</b></td><td>decimal</td><td>Indicador de oportunidad de aclaraciones</td></tr>
+                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind1</b></td><td>decimal</td><td>Indicador de extemporaneidad (Puntualidad)</td></tr>
+                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind2</b></td><td>decimal</td><td>Indicador de reenvíos (Calidad)</td></tr>
+                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind3</b></td><td>decimal</td><td>Indicador de retransmisiones (Correcciones)</td></tr>
+                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind4</b></td><td>decimal</td><td>Indicador de motivos de retransmisión (Motivos)</td></tr>
+                        <tr><td style="padding: 6px; border-bottom: 1px solid #eee;"><b>calif_ind5</b></td><td>decimal</td><td>Indicador de oportunidad de aclaraciones (Respuesta)</td></tr>
                     </tbody>
                 </table>
             </div>
